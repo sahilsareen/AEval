@@ -6,6 +6,7 @@ urlpatterns = patterns('',
     # url(r'^$', 'AEval.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
+    url(r'^interview/', include('interview.urls', namespace="interview")),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^user/', include('sky_visitor.urls')),
 )
