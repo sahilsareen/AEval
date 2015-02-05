@@ -20,12 +20,19 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = '!)wdnnn64ocm#ss3tp-+^v*0wzqv!w&h8xu_=d0t2%e0r)2t-w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+#DEBUG = False
 DEBUG = True
+
+#ALLOWED_HOSTS = ['*']
 
 TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
+TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
+#print TEMPLATE_DIRS
+
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
 # Application definition
 
@@ -36,6 +43,10 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'sky_visitor',
+    'interview',
+    'debug_toolbar',
+#    'crispy_forms',
 )
 
 MIDDLEWARE_CLASSES = (
