@@ -1,0 +1,10 @@
+DROP DATABASE IF EXISTS `aeval_db`;
+CREATE DATABASE `aeval_db`
+    DEFAULT CHARACTER SET utf8
+    DEFAULT COLLATE utf8_general_ci;
+
+USE 'mysql';
+GRANT ALL PRIVILEGES ON aeval_db.* TO 'ssareen'@'localhost' IDENTIFIED BY 'ssareen'
+
+WITH GRANT OPTION;
+FLUSH PRIVILEGES;
