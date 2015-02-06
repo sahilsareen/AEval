@@ -1,7 +1,8 @@
 {% load staticfiles %}
 
 <link rel="stylesheet" type="text/css" href="{% static 'interview/style.css' %}" />
-
+<div id="navcontainer">
+<h1><center>~ AEval ~ ARISTA Networks </center></h1>
 {% if latest_question_list %}
     <ul>
     {% for question in latest_question_list %}
@@ -13,10 +14,14 @@
       <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
       <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br />
       {% endfor %}
-      <input type="submit" value="Save" />
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="submit" value="Save" />&nbsp;&nbsp;
+      <input type="submit" value="Clear" />
     </form>
     {% endfor %}
+    <center><h1><input type="submit" value="Submit and Exit test" /></h1></center>
     </ul>
+</div>
 {% else %}
-    <p>No polls are available.</p>
+    <p>No questions are available.</p>
 {% endif %}
