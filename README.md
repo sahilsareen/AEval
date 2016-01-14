@@ -16,3 +16,7 @@ Contributions to this app are much appreciated.
   - Order students by ranks (based on score, display time taken)
   - Display the fastest coders on coding questions
 * Improve the login and candidate registeration pages
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/sahilsareen/aeval/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
