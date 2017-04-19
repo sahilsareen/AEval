@@ -7,8 +7,8 @@ See ./AEval.pptx for some screenshots.
 
 Contributions to this app are much appreciated.
 
-* TODO *
-=========
+## TODO 
+
 * Integrate a judge for programming questions
 * Add functionality on the admin side for programming questions
 * Add support for multiple answer correct questions
